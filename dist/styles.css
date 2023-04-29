@@ -205,6 +205,7 @@ body {
   font-size: 0.8rem;
   border: 1px solid #9a9a9a;
   border-radius: 5px;
+  min-width: 200px;
 }
 
 /* buttons */
@@ -237,6 +238,9 @@ body {
     margin: 0px;
     border-radius: 0px;
     overflow: hidden;
+    height: calc(100svh - var(--appbar-height));
+    min-height: calc(100svh - var(--appbar-height));
+    max-height: 100svh;
   }
 
   .chat__input {
