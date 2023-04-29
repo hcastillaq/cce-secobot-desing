@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secobot desing system</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      pre {
+        tab-size: 2;
+      }
+    </style>
+    <link
+      href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <main class="p4">
+      <h3 class="mb3">Colores</h3>
+      <ul class="flex list-reset" style="gap: 20px">
+        <li>
+          <div class="mb2">#0164c1</div>
+          <div
+            class="mt2"
+            style="
+              width: 60px;
+              height: 60px;
+              background-color: var(--color-primary);
+            "
+          ></div>
+          <div class="center">
+            <small>Primario</small>
+          </div>
+        </li>
+        <li>
+          <div class="mb2 center">#f0f0f0</div>
+          <div
+            class="mt2"
+            style="
+              width: 60px;
+              height: 60px;
+              background-color: var(--chat-background);
+            "
+          ></div>
+          <div class="center">
+            <small>Background</small>
+          </div>
+        </li>
+
+        <li>
+          <div class="mb2 center">#f0f0f0</div>
+          <div
+            class="mt2"
+            style="
+              width: 60px;
+              height: 60px;
+              background-color: var(--font-color);
+            "
+          ></div>
+          <div class="center">
+            <small>Texto</small>
+          </div>
+        </li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <h3 class="mb3">Shadows</h3>
+      <ul class="list-reset flex">
+        <li>
+          <div
+            style="
+              aspect-ratio: 1/1;
+              box-shadow: var(--box-shadow);
+              width: 260px;
+            "
+          ></div>
+          <div class="center mt2">
+            <small
+              >rgba(0, 0, 0, 0.05) 0px 6px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px
+              0px 1px;</small
+            >
+          </div>
+        </li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <h3 class="mb3">Botones</h3>
+      <div class="mb2">
+        <button class="button">Text button</button>
+      </div>
+      <pre>
+				<code> &lt;button class="button"&gt;Text button&lt;/button&gt; </code>
+			</pre>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <h3 class="mb3">Input</h3>
+      <div class="mb2">
+        <input type="text" class="textfield" placeholder="input example" />
+      </div>
+      <pre>
+        <code>&lt;input type="text" class="textfield" placeholder="input example"/&gt;</code>
+      </pre>
+
+      <br />
+      <br />
+
+      <hr />
+      <br />
+
+      <h3 class="mb3">Appbar</h3>
+      <div class="appbar">
+        <div class="container">
+          <div class="appbar__content">
+            <div class="appbar__logo">
+              <a href="https://www.colombiacompra.gov.co/">
+                <img src="./cce.svg" alt="colombia compra eficiente" />
+              </a>
+            </div>
+            <h1 class="text-white appbar__title">SECOBOT</h1>
+          </div>
+        </div>
+      </div>
+
+      <pre>
+	<code>
+		<div class="appbar">
+			<div class="container">
+				<div class="appbar__content">
+					<div class="appbar__logo">
+							<a href="https://www.colombiacompra.gov.co/">
+							<img src="./cce.svg" alt="colombia compra eficiente">
+							</a>
+					</div>
+					<h1 class="text-white appbar__title">SECOBOT</h1>
+					</div>
+			</div>
+		</div>
+	</code>
+</pre>
+      <hr />
+      <!-- chat -->
+      <h3 class="mb3 mt3">Chat</h3>
+      <div class="container">
+        <div class="chat">
+          <div class="messages">
+            <div class="message">
+              <div class="user">
+                <img src="./secobot.png" alt="secobot" />
+              </div>
+              <div class="content">
+                <p>¡Hola! soy SECOBOT,</p>
+                <p>por favor ingrese sus datos para ayudarle</p>
+                <br />
+                <div>
+                  <div class="control">
+                    <label for="">Nombre*</label>
+                    <input
+                      class="textfield"
+                      type="text"
+                      placeholder="Nombre y apellido"
+                      aria-label="ingrese nombre y apellido"
+                    />
+                  </div>
+                  <div class="control">
+                    <label for="">Correo electrónico*</label>
+                    <input
+                      class="textfield"
+                      type="text"
+                      placeholder="ejemplo@ejemplo.com"
+                      aria-label="ingrese correo electrónico"
+                    />
+                  </div>
+                  <div class="control">
+                    <label for="">Numero de celular*</label>
+                    <input
+                      class="textfield"
+                      type="text"
+                      placeholder="3001234567"
+                      aria-label="ingrese numero de celular"
+                    />
+                  </div>
+                  <div class="control">
+                    <button class="button">Continuar</button>
+                  </div>
+                </div>
+
+                <div class="time">ahora mismo</div>
+              </div>
+            </div>
+
+            <div class="message message--user">
+              <div class="content">Necesito cambiar mi contraseña</div>
+            </div>
+          </div>
+
+          <div class="input">
+            <input
+              autofocus
+              type="text"
+              placeholder="Escriba su message"
+              aria-label="Escriba su message"
+            />
+            <button>
+              <span class="material-symbols-outlined"> send </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <pre>
+	<code>
+		<div class="container">
+			<div class="chat">
+        <div class="messages">
+          <div class="message">
+            <div class="user">
+              <img src="/secobot.png" alt="secobot" />
+            </div>
+            <div class="content">
+              <p>¡Hola! soy SECOBOT,</p>
+              <p>por favor ingrese sus datos para ayudarle</p>
+              <br />
+              <div>
+                <div class="control">
+                  <label for="">Nombre*</label>
+                  <input
+                    class="textfield"
+                    type="text"
+                    placeholder="Nombre y apellido"
+                    aria-label="ingrese nombre y apellido"
+                  />
+                </div>
+                <div class="control">
+                  <label for="">Correo electrónico*</label>
+                  <input
+                    class="textfield"
+                    type="text"
+                    placeholder="ejemplo@ejemplo.com"
+                    aria-label="ingrese correo electrónico"
+                  />
+                </div>
+                <div class="control">
+                  <label for="">Numero de celular*</label>
+                  <input
+                    class="textfield"
+                    type="text"
+                    placeholder="3001234567"
+                    aria-label="ingrese numero de celular"
+                  />
+                </div>
+                <div class="control">
+                  <button class="button">Continuar</button>
+                </div>
+              </div>
+
+              <div class="time">ahora mismo</div>
+            </div>
+          </div>
+
+          <div class="message message--user">
+            <div class="content">Necesito cambiar mi contraseña</div>
+          </div>
+        </div>
+
+        <div class="input">
+          <input
+            autofocus
+            type="text"
+            placeholder="Escriba su message"
+            aria-label="Escriba su message"
+          />
+          <button>
+            <span class="material-symbols-outlined"> send </span>
+          </button>
+        </div>
+      </div>
+		</div>
+	</code>
+</pre>
+    </main>
+  </body>
+</html>
+
+<script>
+  document.querySelectorAll("pre code").forEach((el) => {
+    let html = el.innerHTML;
+    //parse html to display plain html
+    html = html.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    //remove empty spaces
+    el.innerHTML = html;
+    hljs.highlightElement(el);
+  });
+</script>

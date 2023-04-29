@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Secobot desing system</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="appbar">
+      <div class="container">
+        <div class="appbar__content">
+          <div class="appbar__logo">
+            <a href="https://www.colombiacompra.gov.co/">
+              <img src="./cce.svg" alt="colombia compra eficiente" />
+            </a>
+          </div>
+
+          <h1 class="text-white appbar__title">SECOBOT</h1>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="chat">
+        <div class="messages">
+          <div class="message">
+            <div class="user">
+              <img src="./secobot.png" alt="secobot" />
+            </div>
+            <div class="content">
+              <p>¡Hola! soy SECOBOT,</p>
+              <p>por favor ingrese sus datos para ayudarle</p>
+              <br />
+              <div>
+                <div class="control">
+                  <label for="">Nombre*</label>
+                  <input
+                    class="textfield"
+                    type="text"
+                    placeholder="Nombre y apellido"
+                    aria-label="ingrese nombre y apellido"
+                  />
+                </div>
+                <div class="control">
+                  <label for="">Correo electrónico*</label>
+                  <input
+                    class="textfield"
+                    type="text"
+                    placeholder="ejemplo@ejemplo.com"
+                    aria-label="ingrese correo electrónico"
+                  />
+                </div>
+                <div class="control">
+                  <label for="">Numero de celular*</label>
+                  <input
+                    class="textfield"
+                    type="text"
+                    placeholder="3001234567"
+                    aria-label="ingrese numero de celular"
+                  />
+                </div>
+                <div class="control">
+                  <button class="button">Continuar</button>
+                </div>
+              </div>
+
+              <div class="time">ahora mismo</div>
+            </div>
+          </div>
+
+          <div class="message message--user">
+            <div class="content">Necesito cambiar mi contraseña</div>
+          </div>
+        </div>
+
+        <div class="input">
+          <input
+            autofocus
+            type="text"
+            placeholder="Escriba su message"
+            aria-label="Escriba su message"
+          />
+          <button>
+            <span class="material-symbols-outlined"> send </span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
